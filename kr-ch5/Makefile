@@ -6,9 +6,9 @@ PROGS = ex_5_3 ex_5_4 ex_5_6 ex_5_10
 all: $(PROGS)
 
 %: %.c
-        $(CC) $(CFLAGS) $< -o $@
+	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-        rm -f $(PROGS) compile_commands.json
+	rm -f $(PROGS) compile_commands.json
 
 .PHONY: all clean
