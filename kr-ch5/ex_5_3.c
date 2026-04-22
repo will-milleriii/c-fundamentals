@@ -8,6 +8,7 @@
 #include <string.h>
 
 void strcatpointer(char *, char *);
+void strcatv2(char *, char *);
 int main(void) 
 {
 	char orig[64] = "Hello World. ";
@@ -25,6 +26,11 @@ int main(void)
 	char orig3[64] = "Hello";
 	strcatpointer(orig3, "");
 	printf("%s\n", orig3);
+
+	//updated method
+	char original[64] = "Learning C ";
+	strcatv2(original, "Is Fun!");
+	printf("%s\n", original);
 	return 0;
 }
 
@@ -43,4 +49,15 @@ void strcatpointer(char *orig, char *appended)
 		appended++;
 	}
 	*orig = '\0';
+}
+
+void strcatv2(char *s, char *t)
+{
+	while(*s)
+	    s++;
+
+
+	while ((*s++ = *t++))
+	    ;
+	
 }
