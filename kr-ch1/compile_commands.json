@@ -1,0 +1,21 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/gcc",
+      "-c",
+      "-Wall",
+      "-Wextra",
+      "-Werror",
+      "-g",
+      "-O0",
+      "-std=c99",
+      "-pedantic",
+      "-o",
+      "ex_1_3",
+      "ex_1_3.c"
+    ],
+    "directory": "/home/willmilleriii/dev/learning/c-fundamentals/kr-ch1",
+    "file": "/home/willmilleriii/dev/learning/c-fundamentals/kr-ch1/ex_1_3.c",
+    "output": "/home/willmilleriii/dev/learning/c-fundamentals/kr-ch1/ex_1_3"
+  }
+]
